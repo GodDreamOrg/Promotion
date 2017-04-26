@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<venus-server>
+	<!-- 设置参数验证拦截器 -->
+	<interceptors>
+		<!-- 参数校验拦截器 -->
+		<interceptor name="validator-interceptor" class="com.meidusa.venus.backend.interceptor.ValidatorInterceptor" />
+	</interceptors>
+	<interceptor-stacks>
+		<interceptor-stack name="promotion-stack">
+			<interceptor-ref name="validator-interceptor" />
+		</interceptor-stack>
+	</interceptor-stacks>
+	
+	<services>
+        <service type="com.ares.promotion.manager.api.IUserService">
+            <instance class="com.ares.promotion.manager.service.UserServiceImpl" />
+        </service>
+	</services>
+</venus-server>
