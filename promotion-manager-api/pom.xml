@@ -1,0 +1,23 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.ares.promotion</groupId>
+    <artifactId>promotion-pom</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <relativePath>../promotion-pom/pom.xml</relativePath>
+  </parent>
+  <artifactId>promotion-manager-api</artifactId>
+  <version>${version.promotion-manager-api}</version>
+  <description>促销管理服务api</description>
+  <name>promotion-manager-api</name>
+  <dependencies>
+		<dependency>
+			<groupId>com.meidusa.venus.commons</groupId>
+			<artifactId>venus-common-exception</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.meidusa.toolkit</groupId>
+			<artifactId>fastmark</artifactId>
+		</dependency>
+	</dependencies>
+</project>

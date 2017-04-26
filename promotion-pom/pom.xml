@@ -1,0 +1,264 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.ares.promotion</groupId>
+	<artifactId>promotion-pom</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<description>促销中心</description>
+	<properties>
+		<timestamp>${maven.build.timestamp}</timestamp>
+		<maven.build.timestamp.format>yyyyMMddHHmm</maven.build.timestamp.format>
+		<venus.version>3.2.20</venus.version>
+        <spring.version>3.2.17.RELEASE</spring.version>
+	    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	    <logback.version>1.0.13</logback.version>
+	    
+		<version.venus-version>3.2.20</version.venus-version>
+		<!-- api, 版本号可根据需要修改 -->
+		<version.promotion-exec-api>1.0.0-SNAPSHOT</version.promotion-exec-api>
+		<version.promotion-manager-api>1.0.0-SNAPSHOT</version.promotion-manager-api>
+		<!-- service, 版本号均无需修改 -->
+		<version.promotion-entity>1.0.0-SNAPSHOT</version.promotion-entity>
+		<version.promotion-exec-service>1.0.0-SNAPSHOT</version.promotion-exec-service>
+		<version.promotion-manager-service>1.0.0-SNAPSHOT</version.promotion-manager-service>
+		<!-- package, 版本号可根据需要修改 -->
+		<version.promotion-exec-service-venus>1.0.0-SNAPSHOT</version.promotion-exec-service-venus>
+		<version.promotion-manager-service-venus>1.0.0-SNAPSHOT</version.promotion-manager-service-venus>
+		<version.promotion-manager-web>1.0.0</version.promotion-manager-web>
+	</properties>
+	<dependencyManagement>
+		<dependencies>
+			<!-- 本项目內依赖 -->
+			<dependency>
+				<groupId>com.ares.promotion</groupId>
+				<artifactId>promotion-entity</artifactId>
+				<version>${version.promotion-entity}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.ares.promotion</groupId>
+				<artifactId>promotion-exec-api</artifactId>
+				<version>${version.promotion-exec-api}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.ares.promotion</groupId>
+				<artifactId>promotion-manager-api</artifactId>
+				<version>${version.promotion-manager-api}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.ares.promotion</groupId>
+				<artifactId>promotion-exec-service</artifactId>
+				<version>${version.promotion-exec-service}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.ares.promotion</groupId>
+				<artifactId>promotion-manager-service</artifactId>
+				<version>${version.promotion-manager-service}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.codehaus.plexus</groupId>
+				<artifactId>plexus-classworlds</artifactId>
+				<version>2.4.4-HEXNOVA</version>
+			</dependency>
+			<dependency>
+				<groupId>ognl</groupId>
+				<artifactId>ognl</artifactId>
+				<version>3.0.1</version>
+			</dependency>
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>4.11</version>
+				<scope>test</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.codehaus.jackson</groupId>
+				<artifactId>jackson-mapper-asl</artifactId>
+				<version>1.5.1</version>
+			</dependency>
+			<dependency>
+				<groupId>asm</groupId>
+				<artifactId>asm-all</artifactId>
+				<version>3.3.1</version>
+			</dependency>
+			<dependency>
+				<groupId>com.googlecode.xmemcached</groupId>
+				<artifactId>xmemcached</artifactId>
+				<version>1.3.3</version>
+			</dependency>
+			<dependency>
+				<groupId>org.mongodb</groupId>
+				<artifactId>bson</artifactId>
+				<version>2.5.3</version>
+			</dependency>
+			<dependency>
+				<groupId>commons-lang</groupId>
+				<artifactId>commons-lang</artifactId>
+				<version>2.4</version>
+			</dependency>
+			<dependency>
+				<groupId>commons-logging</groupId>
+				<artifactId>commons-logging</artifactId>
+				<version>1.1.1</version>
+			</dependency>
+
+			<dependency>
+				<groupId>commons-beanutils</groupId>
+				<artifactId>commons-beanutils</artifactId>
+				<version>1.8.3</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-io</artifactId>
+				<version>2.4</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.google.collections</groupId>
+				<artifactId>google-collections</artifactId>
+				<version>1.0</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.codehaus.castor</groupId>
+				<artifactId>castor-xml</artifactId>
+				<version>1.3.2</version>
+			</dependency>
+
+			<!-- spring -->
+
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-core</artifactId>
+				<version>${spring.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-beans</artifactId>
+				<version>${spring.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-context</artifactId>
+				<version>${spring.version}</version>
+			</dependency>
+			<dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-web</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-context-support</artifactId>
+				<version>${spring.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-test</artifactId>
+				<version>${spring.version}</version>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>commons-digester</groupId>
+				<artifactId>commons-digester</artifactId>
+				<version>2.1</version>
+			</dependency>
+			<dependency>
+				<groupId>org.testng</groupId>
+				<artifactId>testng</artifactId>
+				<scope>test</scope>
+				<version>6.4</version>
+			</dependency>
+			<!-- venus -->
+			<dependency>
+				<groupId>com.meidusa.venus</groupId>
+				<artifactId>venus-client</artifactId>
+				<version>${venus.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.meidusa.venus.commons</groupId>
+				<artifactId>venus-common-exception</artifactId>
+				<version>${venus.version}</version>
+			</dependency>
+			
+		
+			<dependency>
+				<groupId>com.meidusa.venus</groupId>
+				<artifactId>venus-backend</artifactId>
+				<version>${venus.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.meidusa.toolkit</groupId>
+				<artifactId>fastmark</artifactId>
+				<version>1.0.3</version>
+			</dependency>
+			<dependency>
+				<groupId>org.javassist</groupId>
+				<artifactId>javassist</artifactId>
+				<version>3.16.1-GA</version>
+				<type>jar</type>
+				<scope>compile</scope>
+			</dependency>
+			
+			<dependency>
+				<groupId>ch.qos.logback</groupId>
+				<artifactId>logback-access</artifactId>
+				<version>${logback.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>ch.qos.logback</groupId>
+				<artifactId>logback-classic</artifactId>
+				<version>${logback.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>ch.qos.logback</groupId>
+				<artifactId>logback-core</artifactId>
+				<version>${logback.version}</version>
+			</dependency>
+			
+            <dependency>
+	            <groupId>com.meidusa.venus.helloworld</groupId>
+	            <artifactId>venus-helloworld-api</artifactId>
+	            <version>${project.version}</version>
+	        </dependency>
+        
+	        <dependency>
+	            <groupId>com.meidusa.venus.helloworld</groupId>
+	            <artifactId>venus-helloworld-service</artifactId>
+	            <version>${project.version}</version>
+	        </dependency>
+	        
+	        <dependency>
+                <groupId>com.meidusa.venus.helloworld</groupId>
+                <artifactId>venus-helloworld-client</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            
+            <dependency>
+                <groupId>com.meidusa.venus.helloworld</groupId>
+                <artifactId>venus-helloworld-http</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+            	<groupId>com.meidusa.toolkit.web</groupId>
+            	<artifactId>toolkit-web-spring</artifactId>
+            	<version>1.2.2</version>
+            </dependency>
+		</dependencies>
+	</dependencyManagement>
+	<modules>
+		<module>../promotion-entity</module>
+		<module>../promotion-exec-api</module>
+		<module>../promotion-exec-service</module>
+		<module>../promotion-exec-service-venus</module>
+		<module>../promotion-manager-api</module>
+		<module>../promotion-manager-service</module>
+		<module>../promotion-manager-service-venus</module>
+		<module>../promotion-manager-web</module>
+	</modules>
+	<name>promotion-pom</name>
+</project>
