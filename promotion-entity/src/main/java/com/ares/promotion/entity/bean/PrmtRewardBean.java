@@ -2,7 +2,7 @@ package com.ares.promotion.entity.bean;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
-import java.sql.Date;
+import java.util.Date;
 
 public class PrmtRewardBean implements Serializable{
 
