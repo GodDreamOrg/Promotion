@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="">
+	<resultMap type="com.ares.promotion.entity.bean.PrmtRecordBean"
+		id="PrmtRecord">
+		<id column="ID" jdbcType="BIGINT" property="id" />
+		<result column="ORDER_CODE" jdbcType="VARCHAR" property="orderCode" />
+		<result column="PRMT_CODE" jdbcType="VARCHAR" property="prmtCode" />
+		<result column="REWARD_TIMES" jdbcType="INT" property="rewardTimes" />
+		<result column="MEMBER_ID" jdbcType="VARCHAR" property="memberId" />
+		<result column="CREATE_TIME" jdbcType="DATETIME" property="createTime" />
+		<result column="UPDATE_TIME" jdbcType="DATETIME" property="updateTime" />
+		<result column="ACTIVE_FLAG" jdbcType="BIT" property="activeFlag" />
+	</resultMap>
+</mapper>

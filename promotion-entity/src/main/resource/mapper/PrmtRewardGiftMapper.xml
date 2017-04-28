@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="">
+	<resultMap type="com.ares.promotion.entity.bean.PrmtRewardGiftBean"
+		id="PrmtRewardGift">
+		<id column="ID" jdbcType="BIGINT" property="id" />
+		<result column="REWARD_DETAIL_ID" jdbcType="BIGINT" property="rewardDetailId" />
+		<result column="GIFT_TYPE" jdbcType="TINYINT" property="giftType" />
+		<result column="GIFT_SKU_CODE" jdbcType="VARCHAR" property="giftSkuCode" />
+		<result column="GIFT_SKU_NAME" jdbcType="VARCHAR" property="giftSkuName" />
+		<result column="SINGLE_COUNT" jdbcType="INT" property="singleCount" />
+		<result column="TOTAL_COUNT" jdbcType="INT" property="totalCount" />
+		<result column="USED_COUNT" jdbcType="INT" property="usedCount" />
+		<result column="BUY_AMOUNT" jdbcType="DECIMAL" property="buyAmount" />
+		<result column="SETTLE_AMOUNT" jdbcType="DECIMAL" property="settleAmount" />
+		<result column="CREATE_TIME" jdbcType="DATETIME" property="createTime" />
+		<result column="CREATE_USER_ID" jdbcType="VARCHAR" property="createUserId" />
+		<result column="UPDATE_TIME" jdbcType="DATETIME" property="updateTime" />
+		<result column="UPDATE_USER_ID" jdbcType="VARCHAR" property="updateUserId" />
+		<result column="ACTIVE_FLAG" jdbcType="BIT" property="activeFlag" />
+	</resultMap>
+</mapper>

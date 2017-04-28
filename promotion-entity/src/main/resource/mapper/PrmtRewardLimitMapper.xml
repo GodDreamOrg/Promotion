@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="">
+	<resultMap type="com.ares.promotion.entity.bean.PrmtRewardLimitBean"
+		id="PrmtRewardLimit">
+		<id column="ID" jdbcType="BIGINT" property="id" />
+		<result column="ASSOCIATED_TYPE" jdbcType="TINYINT UNSIGNED"
+			property="associatedType" />
+		<result column="ASSOCIATED_CODE" jdbcType="VARCHAR" property="associatedCode" />
+		<result column="ASSOCIATED_ID" jdbcType="BIGINT" property="associatedId" />
+		<result column="USED_COUNT" jdbcType="INT" property="usedCount" />
+		<result column="DAILY_PERSION_COUNT" jdbcType="INT"
+			property="dailyPersionCount" />
+		<result column="PERSION_COUNT" jdbcType="INT" property="persionCount" />
+		<result column="DAILY_COUNT" jdbcType="INT" property="dailyCount" />
+		<result column="TOTAL_COUNT" jdbcType="INT" property="totalCount" />
+		<result column="TOTAL_AMOUNT" jdbcType="DECIMAL" property="totalAmount" />
+		<result column="DAILY_AMOUNT" jdbcType="DECIMAL" property="dailyAmount" />
+		<result column="USED_AMOUNT" jdbcType="DECIMAL" property="usedAmount" />
+		<result column="PERSION_AMOUNT" jdbcType="DECIMAL" property="persionAmount" />
+		<result column="DAILY_PERSION_AMOUNT" jdbcType="DECIMAL"
+			property="dailyPersionAmount" />
+		<result column="ORDER_SKU_MAX_NUM" jdbcType="INT" property="orderSkuMaxNum" />
+		<result column="ORDER_SKU_MIN_NUM" jdbcType="INT" property="orderSkuMinNum" />
+		<result column="ACCOUNT_LIMIT" jdbcType="VARCHAR" property="accountLimit" />
+		<result column="MEMBER_TYPE" jdbcType="TINYINT" property="memberType" />
+		<result column="MEMBER_LEVEL" jdbcType="VARCHAR" property="memberLevel" />
+		<result column="DELIVERY_TYPE" jdbcType="TINYINT" property="deliveryType" />
+		<result column="REGISTER_START_TIME" jdbcType="DATETIME"
+			property="registerStartTime" />
+		<result column="REGISTER_END_TIME" jdbcType="DATETIME"
+			property="registerEndTime" />
+		<result column="CREATE_TIME" jdbcType="DATETIME" property="createTime" />
+		<result column="CREATE_USER_ID" jdbcType="VARCHAR" property="createUserId" />
+		<result column="UPDATE_TIME" jdbcType="DATETIME" property="updateTime" />
+		<result column="UPDATE_USER_ID" jdbcType="VARCHAR" property="updateUserId" />
+		<result column="ACTIVE_FLAG" jdbcType="BIT" property="activeFlag" />
+	</resultMap>
+</mapper>

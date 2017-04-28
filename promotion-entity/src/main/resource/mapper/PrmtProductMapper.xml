@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="">
+	<resultMap type="com.ares.promotion.entity.bean.PrmtProductBean"
+		id="PrmtProduct">
+		<id column="ID" jdbcType="BIGINT" property="id" />
+		<result column="PRMT_CODE" jdbcType="VARCHAR" property="prmtCode" />
+		<result column="REWARD_COLLECTION_CODE" jdbcType="VARCHAR"
+			property="rewardCollectionCode" />
+		<result column="RELATION_TYPE" jdbcType="TINYINT" property="relationType" />
+		<result column="ASSOCAITED_TYPE" jdbcType="TINYINT" property="assocaitedType" />
+		<result column="CATEGORY_CODE" jdbcType="VARCHAR" property="categoryCode" />
+		<result column="CATEGORY_NAME" jdbcType="VARCHAR" property="categoryName" />
+		<result column="CATEGORY_LEVEL" jdbcType="VARCHAR" property="categoryLevel" />
+		<result column="STORE_CODE" jdbcType="VARCHAR" property="storeCode" />
+		<result column="BRAND_CODE" jdbcType="VARCHAR" property="brandCode" />
+		<result column="MDSE_CODE" jdbcType="VARCHAR" property="mdseCode" />
+		<result column="MDSE_NAME" jdbcType="VARCHAR" property="mdseName" />
+		<result column="SKU_CODE" jdbcType="VARCHAR" property="skuCode" />
+		<result column="SKU_NAME" jdbcType="VARCHAR" property="skuName" />
+		<result column="START_TIME" jdbcType="DATETIME" property="startTime" />
+		<result column="END_TIME" jdbcType="DATETIME" property="endTime" />
+		<result column="CREATE_TIME" jdbcType="DATETIME" property="createTime" />
+		<result column="CREATE_USER_ID" jdbcType="VARCHAR" property="createUserId" />
+		<result column="UPDATE_TIME" jdbcType="DATETIME" property="updateTime" />
+		<result column="UPDATE_USER_ID" jdbcType="VARCHAR" property="updateUserId" />
+		<result column="ACTIVE_FLAG" jdbcType="BIT" property="activeFlag" />
+	</resultMap>
+</mapper>

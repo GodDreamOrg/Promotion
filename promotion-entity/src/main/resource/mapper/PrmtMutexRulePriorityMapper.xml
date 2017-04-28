@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="">
+	<resultMap type="com.ares.promotion.entity.bean.PrmtMutexRulePriorityBean"
+		id="PrmtMutexRulePriority">
+		<id column="ID" jdbcType="BIGINT" property="id" />
+		<result column="PRMT_CHARACTER" jdbcType="VARCHAR" property="prmtCharacter" />
+		<result column="PRIORITY" jdbcType="TINYINT" property="priority" />
+		<result column="STATUS" jdbcType="BIT" property="status" />
+		<result column="RULE_DESC" jdbcType="VARCHAR" property="ruleDesc" />
+		<result column="CREATE_TIME" jdbcType="DATETIME" property="createTime" />
+		<result column="CREATE_USER_ID" jdbcType="VARCHAR" property="createUserId" />
+		<result column="UPDATE_TIME" jdbcType="DATETIME" property="updateTime" />
+		<result column="UPDATE_USER_ID" jdbcType="VARCHAR" property="updateUserId" />
+		<result column="ACTIVE_FLAG" jdbcType="BIT" property="activeFlag" />
+	</resultMap>
+</mapper>

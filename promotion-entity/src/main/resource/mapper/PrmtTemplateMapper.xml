@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="">
+	<resultMap type="com.ares.promotion.entity.bean.PrmtTemplateBean"
+		id="PrmtTemplate">
+		<id column="ID" jdbcType="BIGINT" property="id" />
+		<result column="TEMPLATE_CODE" jdbcType="VARCHAR" property="templateCode" />
+		<result column="TEMPLATE_NAME" jdbcType="VARCHAR" property="templateName" />
+		<result column="TEMPLATE_TYPE" jdbcType="TINYINT" property="templateType" />
+		<result column="INITIATOR_TYPE" jdbcType="TINYINT" property="initiatorType" />
+		<result column="INITIATOR_CODE" jdbcType="VARCHAR" property="initiatorCode" />
+		<result column="CYCLE_FLAG" jdbcType="BIT" property="cycleFlag" />
+		<result column="PRMT_STORE" jdbcType="VARCHAR" property="prmtStore" />
+		<result column="TERMINAL" jdbcType="VARCHAR" property="terminal" />
+		<result column="MEMBER_TYPE" jdbcType="VARCHAR" property="memberType" />
+		<result column="PAY_LIMIT_FLAG" jdbcType="BIT" property="payLimitFlag" />
+		<result column="PAY_TYPE" jdbcType="BIT" property="payType" />
+		<result column="PRMT_TYPE" jdbcType="BIT" property="prmtType" />
+		<result column="MDSE_RESOURCE_TYPE" jdbcType="VARCHAR"
+			property="mdseResourceType" />
+		<result column="MDSE_RANGE_TYPE" jdbcType="VARCHAR" property="mdseRangeType" />
+		<result column="TRIGGER_EVENT" jdbcType="TINYINT" property="triggerEvent" />
+		<result column="BASE_ADDUP_TYPE" jdbcType="VARCHAR" property="baseAddupType" />
+		<result column="AMOUNT_TYPE" jdbcType="VARCHAR" property="amountType" />
+		<result column="REWARD_TYPE" jdbcType="VARCHAR" property="rewardType" />
+		<result column="REWARD_AMOUNT_TYPE" jdbcType="VARCHAR"
+			property="rewardAmountType" />
+		<result column="CREATE_TIME" jdbcType="DATETIME" property="createTime" />
+		<result column="CREATE_USER_ID" jdbcType="VARCHAR" property="createUserId" />
+		<result column="UPDATE_TIME" jdbcType="DATETIME" property="updateTime" />
+		<result column="UPDATE_USER_ID" jdbcType="VARCHAR" property="updateUserId" />
+		<result column="TEMPLATE_STATUS" jdbcType="TINYINT" property="templateStatus" />
+		<result column="SHOW_NUM" jdbcType="INT" property="showNum" />
+	</resultMap>
+</mapper>

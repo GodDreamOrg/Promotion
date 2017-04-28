@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="">
+	<resultMap type="com.ares.promotion.entity.bean.PrmtQuotaHistoryBean"
+		id="PrmtQuotaHistory">
+		<id column="ID" jdbcType="BIGINT" property="id" />
+		<result column="ASSOCIATED_CODE" jdbcType="VARCHAR" property="associatedCode" />
+		<result column="ASSOCIATED_TYPE" jdbcType="BIT" property="associatedType" />
+		<result column="CREATE_TIME" jdbcType="DATETIME" property="createTime" />
+		<result column="CREATE_USER_ID" jdbcType="VARCHAR" property="createUserId" />
+		<result column="UPDATE_TIME" jdbcType="DATETIME" property="updateTime" />
+		<result column="UPDATE_USER_ID" jdbcType="VARCHAR" property="updateUserId" />
+		<result column="ACTIVE_FLAG" jdbcType="BIT" property="activeFlag" />
+		<result column="QUANTITY_TYPE" jdbcType="INT" property="quantityType" />
+		<result column="TOTAL_COUNT" jdbcType="INT" property="totalCount" />
+		<result column="DAILY_COUNT" jdbcType="INT" property="dailyCount" />
+		<result column="PERSION_COUNT" jdbcType="INT" property="persionCount" />
+		<result column="DAILY_PERSION_COUNT" jdbcType="INT"
+			property="dailyPersionCount" />
+	</resultMap>
+</mapper>

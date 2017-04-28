@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="">
+	<resultMap type="com.ares.promotion.entity.bean.PrmtCustomerGroupItemBean"
+		id="PrmtCustomerGroupItem">
+		<id column="ID" jdbcType="BIGINT" property="id" />
+		<result column="CUSTOMER_GROUP_CODE" jdbcType="VARCHAR"
+			property="customerGroupCode" />
+		<result column="USER_ID" jdbcType="BIT" property="userId" />
+		<result column="CREATE_TIME" jdbcType="DATETIME" property="createTime" />
+		<result column="UPDATE_TIME" jdbcType="DATETIME" property="updateTime" />
+		<result column="ACTIVE_FLAG" jdbcType="BIT" property="activeFlag" />
+	</resultMap>
+</mapper>

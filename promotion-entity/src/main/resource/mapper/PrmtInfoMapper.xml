@@ -2,14 +2,49 @@
 <!DOCTYPE mapper
     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-   
+
 <mapper namespace="">
-	<resultMap type="com.ares.promotion.entity.bean.PrmtInfoBean" id="PrmtCustomerGroup">
-    <id column="ID" jdbcType="BIGINT" property="id"/>
-    <result column="PRMT_CODE" jdbcType="VARCHAR" property="prmtCode"/>
-	<result column="EMAIL" jdbcType="VARCHAR" property="email"/>
-    <result column="ACCOUNT" jdbcType="VARCHAR" property="account"/>
-    <result column="PASSWORD" jdbcType="VARCHAR" property="password"/>
-    
-  </resultMap>
+	<resultMap type="com.ares.promotion.entity.bean.PrmtInfoBean"
+		id="PrmtInfo">
+		<id column="ID" jdbcType="BIGINT" property="id" />
+		<result column="PRMT_CODE" jdbcType="VARCHAR" property="prmtCode" />
+		<result column="TEMPLATE_CODE" jdbcType="VARCHAR" property="templateCode" />
+		<result column="PRMT_NAME" jdbcType="VARCHAR" property="prmtName" />
+		<result column="PRMT_SHORT_NAME" jdbcType="VARCHAR" property="prmtShortName" />
+		<result column="PRMT_TAG" jdbcType="VARCHAR" property="prmtTag" />
+		<result column="PRMT_DESC" jdbcType="VARCHAR" property="prmtDesc" />
+		<result column="PRMT_STATUS" jdbcType="TINYINT" property="prmtStatus" />
+		<result column="PRMT_TYPE" jdbcType="TINYINT" property="prmtType" />
+		<result column="PRMT_FLAG" jdbcType="BIT" property="prmtFlag" />
+		<result column="STORE_CODE" jdbcType="VARCHAR" property="storeCode" />
+		<result column="ASSOCIATED_TYPE" jdbcType="TINYINT" property="associatedType" />
+		<result column="INITIATOR_TYPE" jdbcType="TINYINT" property="initiatorType" />
+		<result column="INITIATOR_CODE" jdbcType="VARCHAR" property="initiatorCode" />
+		<result column="PREHEATING_TIME" jdbcType="INT" property="preheatingTime" />
+		<result column="BEGIN_TIME" jdbcType="DATETIME" property="beginTime" />
+		<result column="END_TIME" jdbcType="DATETIME" property="endTime" />
+		<result column="ON_SHELF_TIME" jdbcType="DATETIME" property="onShelfTime" />
+		<result column="MEMBER_TYPE" jdbcType="TINYINT" property="memberType" />
+		<result column="MEMBER_LIMIT_RULE" jdbcType="VARCHAR" property="memberLimitRule" />
+		<result column="TERMINAL" jdbcType="VARCHAR" property="terminal" />
+		<result column="REWARD_TYPE" jdbcType="TINYINT" property="rewardType" />
+		<result column="REWARD_COLLECTION_RELATION" jdbcType="BIT"
+			property="rewardCollectionRelation" />
+		<result column="SHOW_AREA_FLAG" jdbcType="VARCHAR" property="showAreaFlag" />
+		<result column="CYCLE_FLAG" jdbcType="BIT" property="cycleFlag" />
+		<result column="PAY_LIMIT_FLAG" jdbcType="BIT" property="payLimitFlag" />
+		<result column="RESOURCE_LOCK_FLAG" jdbcType="BIT" property="resourceLockFlag" />
+		<result column="FIRST_ORDER" jdbcType="BIT" property="firstOrder" />
+		<result column="HEAD_PIC_URL" jdbcType="VARCHAR" property="headPicUrl" />
+		<result column="CREATE_TIME" jdbcType="DATETIME" property="createTime" />
+		<result column="CREATE_USER_ID" jdbcType="VARCHAR" property="createUserId" />
+		<result column="CREATE_USER_NAME" jdbcType="VARCHAR" property="createUserName" />
+		<result column="UPDATE_TIME" jdbcType="DATETIME" property="updateTime" />
+		<result column="UPDATE_USER_ID" jdbcType="VARCHAR" property="updateUserId" />
+		<result column="ACTIVE_FLAG" jdbcType="BIT" property="activeFlag" />
+		<result column="APPROVE_TIME" jdbcType="DATETIME" property="approveTime" />
+		<result column="APPROVE_DESC" jdbcType="VARCHAR" property="approveDesc" />
+		<result column="CLOSE_TIME" jdbcType="DATETIME" property="closeTime" />
+		<result column="CLOSE_DESC" jdbcType="VARCHAR" property="closeDesc" />
+	</resultMap>
 </mapper>

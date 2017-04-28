@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="">
+	<resultMap type="com.ares.promotion.entity.bean.PrmtRuleBean"
+		id="PrmtRule">
+		<id column="ID" jdbcType="BIGINT" property="id" />
+		<result column="PRMT_CODE" jdbcType="VARCHAR" property="prmtCode" />
+		<result column="REWARD_COLLECTION_CODE" jdbcType="VARCHAR"
+			property="rewardCollectionCode" />
+		<result column="REWARD_COLLECTION_NAME" jdbcType="VARCHAR"
+			property="rewardCollectionName" />
+		<result column="LEVEL_ID" jdbcType="TINYINT" property="levelId" />
+		<result column="TRIGGER_EVENT" jdbcType="TINYINT" property="triggerEvent" />
+		<result column="BASE_ADDUP_TYPE" jdbcType="TINYINT" property="baseAddupType" />
+		<result column="BASE_AMOUNT" jdbcType="DECIMAL" property="baseAmount" />
+		<result column="BASE_AMOUNT_TYPE" jdbcType="TINYINT" property="baseAmountType" />
+		<result column="CREATE_TIME" jdbcType="DATETIME" property="createTime" />
+		<result column="CREATE_USER_ID" jdbcType="VARCHAR" property="createUserId" />
+		<result column="UPDATE_TIME" jdbcType="DATETIME" property="updateTime" />
+		<result column="UPDATE_USER_ID" jdbcType="VARCHAR" property="updateUserId" />
+		<result column="ACTIVE_FLAG" jdbcType="BIT" property="activeFlag" />
+	</resultMap>
+</mapper> 
