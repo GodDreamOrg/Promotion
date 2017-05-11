@@ -7,10 +7,6 @@ import com.ares.promotion.dao.pagination.Pagination;
 import com.ares.promotion.dao.pagination.PaginationResult;
 
 public interface IPaginationDalClient extends IDalClient{
-	<R> PaginationResult<List<R>> queryForPagination(Class<R> r ,Map<String, Object> param);
-	
-	<R> PaginationResult<List<R>> queryForPagination(Class<R> r ,Object param);
-	
 	<R> PaginationResult<List<R>> queryForPagination(Class<R> r ,Map<String, Object> param , String...sqlIds);
 	
 	PaginationResult<List<Map<String,Object>>> queryForPagination(Map<String, Object> param, String...sqlIds);
@@ -18,10 +14,6 @@ public interface IPaginationDalClient extends IDalClient{
 	<R> PaginationResult<List<R>> queryForPagination(Class<R> r ,Object param, String...sqlIds);
 	
 	PaginationResult<List<Map<String,Object>>> queryForPagination(Object param, String...sqlIds);
-	
-	<R> PaginationResult<List<R>> queryForPagination(Class<R> r ,Map<String, Object> param, Pagination pagination);
-	
-	<R> PaginationResult<List<R>> queryForPagination(Class<R> r ,Object param, Pagination pagination);
 	
 	<R> PaginationResult<List<R>> queryForPagination(Class<R> r ,Map<String, Object> param ,Pagination pagination, String...sqlIds);
 	

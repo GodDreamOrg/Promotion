@@ -9,17 +9,6 @@ import com.ares.promotion.dao.pagination.PaginationResult;
 
 public class PaginationDalClientImpl extends DalClientImpl implements IPaginationDalClient {
 
-	@Override
-	public <R> PaginationResult<List<R>> queryForPagination(Class<R> r, Map<String, Object> param) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public <R> PaginationResult<List<R>> queryForPagination(Class<R> r, Object param) {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 	@Override
 	public <R> PaginationResult<List<R>> queryForPagination(Class<R> r, Map<String, Object> param, String... sqlIds) {
@@ -41,18 +30,6 @@ public class PaginationDalClientImpl extends DalClientImpl implements IPaginatio
 
 	@Override
 	public PaginationResult<List<Map<String, Object>>> queryForPagination(Object param, String... sqlIds) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public <R> PaginationResult<List<R>> queryForPagination(Class<R> r, Map<String, Object> param, Pagination pagination) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public <R> PaginationResult<List<R>> queryForPagination(Class<R> r, Object param, Pagination pagination) {
 		// TODO Auto-generated method stub
 		return null;
 	}
