@@ -3,10 +3,13 @@ package com.ares.promotion.dao.impl;
 import java.util.List;
 import java.util.Map;
 
+import org.mybatis.spring.SqlSessionFactoryBean;
+
 import com.ares.promotion.dao.IDalClient;
 
 public class DalClientImpl implements IDalClient {
-
+	protected SqlSessionFactoryBean sqlSessionFactory;
+	
 	@Override
 	public int save(Object o) {
 		// TODO Auto-generated method stub
@@ -132,5 +135,8 @@ public class DalClientImpl implements IDalClient {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
+	
+	protected void setSqlSessionFactoryBeanName(SqlSessionFactoryBean sqlSessionFactoryBeanName) {
+		this.sqlSessionFactory = sqlSessionFactoryBeanName;
+	}
 }

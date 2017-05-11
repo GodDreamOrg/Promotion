@@ -8,8 +8,6 @@ import com.ares.promotion.dao.pagination.Pagination;
 import com.ares.promotion.dao.pagination.PaginationResult;
 
 public class PaginationDalClientImpl extends DalClientImpl implements IPaginationDalClient {
-
-
 	@Override
 	public <R> PaginationResult<List<R>> queryForPagination(Class<R> r, Map<String, Object> param, String... sqlIds) {
 		// TODO Auto-generated method stub
